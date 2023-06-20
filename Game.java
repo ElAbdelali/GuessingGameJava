@@ -23,13 +23,11 @@ public class Game {
 
     while(guess != number){
       if (guess > number) {
-        System.out.println("Too high!");
-        System.out.print(" Guess a number: ");
+        System.out.println("Too high! Guess another number: ");
         guess = scan.nextInt();
         counter++;
       } else if (guess < number) {
-        System.out.println("Too low!");
-        System.out.print(" Guess a number: ");
+        System.out.println("Too low!  Guess another number: ");
         guess = scan.nextInt();
         counter++;
       }
